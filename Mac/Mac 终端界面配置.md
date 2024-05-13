@@ -1,28 +1,45 @@
-# Mac iTerm2 界面配置
+# Mac 终端界面配置
 
-## 效果展示
+### 安装 ohmyzsh
 
-![image-20210620143312795](images/Mac%20%E7%BB%88%E7%AB%AF%E7%95%8C%E9%9D%A2%E9%85%8D%E7%BD%AE/image-20210620143312795.png)
-
-## 相关软件及脚本
-
-- iTerm2
-- zsh
-- on-my-zsh
-
+```sh
+## github安装
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+## gitee国内进行安装【推荐】
+sh -c "$(curl -fsSL https://gitee.com/mirrors/oh-my-zsh/raw/master/tools/install.sh)"
+```
 
 
-## 下载并安装并配置 iTerm
 
-### 下载
+### 安装 zsh-autosuggestions
 
-- 下载地址：https://iterm2.com
+1. Install command:
 
-### 安装
+   ```sh
+   brew install zsh-autosuggestions
+   ```
 
-- 傻瓜式安装
+2. To activate the autosuggestions, add the following at the end of your .zshrc:
 
-### 配置
+   ```sh
+   source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+   ```
+
+3. Start a new terminal session.
 
 
+
+### 修改 .zshrc 文件
+
+```sh
+# 禁用自动更新提示
+DISABLE_AUTO_UPDATE="true"
+DISABLE_UPDATE_PROMPT="true"
+
+# 导入 .bash_profile 配置
+if [ -f ~/.bash_profile ]; then
+    source ~/.bash_profile
+fi
+
+```
 
