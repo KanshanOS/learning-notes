@@ -53,27 +53,39 @@
 
 - 在创建的 Group 里面创建 `Live Template`
 
-  - Class
-
-    ```
-    /**
-     * 
-     * @author Neo
-     * @since $date$ $time$
-     * @version 1.0
-     */
-    ```
-
   - Method
 
     ```
     /**
      * 
      *
-     * @author Neo
+     * @author $author$
      * @since $date$ $time$
      */
     ```
+
+    > $author$  Expression `groovyScript(" _1.contains('ceair') ? 'YuHai' : 'Kanshan'", filePath())`
+
+## File and code Templates
+
+- File Header
+
+  ![image-20250422145143486](./images/IDEA%E5%88%9D%E5%A7%8B%E5%8C%96%E6%93%8D%E4%BD%9C/image-20250422145143486.png)
+
+  ```
+  /**
+   * 
+   *  
+   * #if ($PACKAGE_NAME.contains("Test"))
+  @author Test
+  #else
+  @author Kanshan
+  #end
+   * @since ${DATE} ${TIME}
+   */
+  ```
+
+  
 
 ## System Setting - 默认不打开项目
 
