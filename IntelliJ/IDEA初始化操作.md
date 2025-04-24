@@ -64,7 +64,7 @@
      */
     ```
 
-    > $author$  Expression `groovyScript(" _1.contains('ceair') ? 'YuHai' : 'Kanshan'", filePath())`
+    > $author$  Expression `groovyScript(" _1.contains('Test') ? 'YuHai' : 'Kanshan'", filePath())`
 
 ## File and code Templates
 
